@@ -1,5 +1,4 @@
-<!-- okay guys here's the plan
- 
+/**
 The program will repeatedly apply a game loop.
 Rounds of rock paper scissors will be player until either player
 has won two total victories, which makes them the winner of the game.
@@ -9,19 +8,19 @@ Then calculate who the winner of the round is accordingly.
 Increment the score of the winner
 If either player has two total round wins, they win the game
 Display the selections of each opponent and the winner of the round, or
-of the game if applicable
+of the game if applicable **/
 
+/*
+FUNCTION getComputerChoice
+    GET random number from 0 - 2
+    
+    IF number is 0
+        choice is rock
+    IF number is 1
+        choice is paper 
+    IF number is 2
+        choice is scissors
 
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <script src="app.js"></script>
-
-</body>
-</html>
+    RETURN choice
+*/
+console.log(Math.random() * 100);
