@@ -53,11 +53,15 @@ function playRound(humanChoice, computerChoice) {
             (humanChoice === "Scissors" && computerChoice === "Paper")) {
         console.log("Round won!")
         humanScore++;
+        console.log("You: " + humanScore);
+        console.log("CPU: " + computerScore);
     }
     //All remaining conditions must be a loss (computer wins)
     else {
         console.log("Round lost!")
         computerScore++;
+        console.log("You: " + humanScore);
+        console.log("CPU: " + computerScore);
     }
 }
 
