@@ -60,3 +60,19 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
     }
 }
+
+function playGame() { 
+    while (humanScore < 5 && computerScore < 5) {
+        playRound(getHumanChoice(), getComputerChoice());
+    }
+
+    if (humanScore > computerScore) {
+        console.log("Game over! You won!");
+    }
+    else {
+        console.log("Game over! You lost!")
+    }
+
+}
+
+playGame();
