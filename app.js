@@ -41,3 +41,22 @@ function getHumanChoice() {
 
     return result;
 }
+
+function playRound(humanChoice, computerChoice) {
+    //Check for draw first
+    if (humanChoice === computerChoice) { 
+        console.log("It's a draw!")
+    }
+    //Check for all human win conditions
+    else if ((humanChoice === "Rock" && computerChoice === "Scissors") ||
+            (humanChoice === "Paper" && computerChoice === "Rock") || 
+            (humanChoice === "Scissors" && computerChoice === "Paper")) {
+        console.log("Round won!")
+        humanScore++;
+    }
+    //All remaining conditions must be a loss (computer wins)
+    else {
+        console.log("Round lost!")
+        computerScore++;
+    }
+}
